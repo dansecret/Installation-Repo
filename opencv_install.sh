@@ -50,7 +50,7 @@ sudo apt -y install libgoogle-glog-dev libgflags-dev
 sudo apt -y install libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
 
 sudo apt -y install python3-dev python3-pip
-sudo -H pip3 install -U pip numpy
+pip3 install -U pip numpy
 sudo apt -y install python3-testresources
 
 cd $cwd
