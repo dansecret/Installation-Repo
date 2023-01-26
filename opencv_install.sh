@@ -82,10 +82,10 @@ cd ..
 cd opencv
 mkdir build
 cd build
-
+#change /usr/local according to the directory position file
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	    -D OPENCV_GENERATE_PKGCONFIG=YES\
-            -D CMAKE_INSTALL_PREFIX=/usr/local ..\
+            -D CMAKE_INSTALL_PREFIX=/usr/local ..\ 
             -D INSTALL_C_EXAMPLES=ON \
             -D INSTALL_PYTHON_EXAMPLES=ON \
             -D WITH_TBB=ON \
