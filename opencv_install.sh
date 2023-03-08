@@ -50,7 +50,7 @@ sudo apt -y install libgoogle-glog-dev libgflags-dev
 sudo apt -y install libgphoto2-dev libeigen3-dev libhdf5-dev doxygen
 
 sudo apt -y install python3-dev python3-pip
-pip3 install -U pip numpy
+sudo -H pip3 install -U pip numpy
 sudo apt -y install python3-testresources
 
 cd $cwd
@@ -82,10 +82,10 @@ cd ..
 cd opencv
 mkdir build
 cd build
-#change /usr/local according to the directory position file
+
 cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	    -D OPENCV_GENERATE_PKGCONFIG=YES\
-            -D CMAKE_INSTALL_PREFIX=/usr/local ..\ 
+            -D CMAKE_INSTALL_PREFIX=/usr/local ..\
             -D INSTALL_C_EXAMPLES=ON \
             -D INSTALL_PYTHON_EXAMPLES=ON \
             -D WITH_TBB=ON \
