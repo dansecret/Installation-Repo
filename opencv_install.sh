@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "install opencv 4 by Rscuad"
 # Define OpenCV Version to install 
 #if you want install opencv 3.4 just change master to -> 3.4.0
